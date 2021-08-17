@@ -1,4 +1,4 @@
-import { FacebookProvider, GoogleProvider } from "./config/authMethods";
+import { FacebookProvider, GitHubProvider, GoogleProvider } from "./config/authMethods";
 import SocialMediaAuth from "./service/auth";
 
 function App() {
@@ -12,6 +12,7 @@ console.log(res)
      <h1>hola</h1>
      <button onClick ={() => handleOnClick(FacebookProvider)}>Facebook</button>
      <button onClick ={() => handleOnClick(GoogleProvider)}>Google</button>
+     <button onClick ={() => handleOnClick(GitHubProvider)}>Google</button>
     </div>
   );
 }
