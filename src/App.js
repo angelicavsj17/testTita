@@ -12,7 +12,7 @@ console.log(res)
      <h1>hola</h1>
      <button onClick ={() => handleOnClick(FacebookProvider)}>Facebook</button>
      <button onClick ={() => handleOnClick(GoogleProvider)}>Google</button>
-     <button onClick ={() => handleOnClick(GitHubProvider)}>Google</button>
+     <button onClick ={() => handleOnClick(GitHubProvider)}>GitHub</button>
     </div>
   );
 }
