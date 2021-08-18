@@ -1,19 +1,32 @@
-import { FacebookProvider, GitHubProvider, GoogleProvider } from "./config/authMethods";
-import SocialMediaAuth from "./service/auth";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./home";
+import { SignUp } from "./signUp";
+import { SignIn } from "./login";
 
 function App() {
-const handleOnClick =async  (provider) => {
-const res = await SocialMediaAuth(provider)
-console.log(res)
-}
-
   return (
-    <div>
-     <h1>hola</h1>
-     <button onClick ={() => handleOnClick(FacebookProvider)}>Facebook</button>
-     <button onClick ={() => handleOnClick(GoogleProvider)}>Google</button>
-     <button onClick ={() => handleOnClick(GitHubProvider)}>GitHub</button>
-    </div>
+    <Router>
+
+      <Switch>
+      <Route exact path="/" render={() => <HomePage />} />
+
+      <Route
+            exact
+            path="/login"
+            render={() => <SignIn />}
+          />
+
+      <Route
+            exact
+            path="/signUp"
+            render={() => <SignUp />}
+          />
+
+      </Switch>
+
+    </Router>
+  
   );
 }
 
