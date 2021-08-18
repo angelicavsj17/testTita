@@ -1,12 +1,12 @@
 
 import  React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link , withRouter } from "react-router-dom";
 import { FacebookProvider, GitHubProvider, GoogleProvider, } from "../../config/authMethods";
 import  firebase from "firebase"
 import  SocialMediaAuth from "../../service/auth";
 import './signUp.css'
 
- export const SignUp = () => {
+  const SignUp = (props) => {
 
  const [email, setEmail]= useState('')
  const [password, setPassword] =useState('')
@@ -17,9 +17,18 @@ import './signUp.css'
         }
 
 const registerUser = (e) => {
-e.preventDefault()
-firebase.auth().createUserWithEmailAndPassword(email, password)
+
+try {
+    e.preventDefault()
+firebase.auth().createUserWithEmailAndPassword(email, password, )
 .then((res)=> alert ('usuario registrado con exito'))
+ props.history.push('/')
+} catch (error) {
+    
+}
+
+
+
 }
     return (
         <div className="container--signUp">
@@ -59,3 +68,4 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
     )
 }
 
+ export default  withRouter(SignUp)
