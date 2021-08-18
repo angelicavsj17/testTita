@@ -31,13 +31,13 @@ import '../signUp/signUp.css'
      placeholder="Contraseña"
     /><br/>
 <button className="button--signUp">Registrarse</button><br/>
-
+</form>
 <h2 className="style--O--signUp">O</h2>
 
   <button className="button--socialMediaFace" onClick ={() => handleOnClick( FacebookProvider )}>Facebook</button><br/>
      <button className="button--socialMediaGoogle" onClick ={() => handleOnClick( GoogleProvider )}>Google</button><br/>
      <button className="button--socialMediaGit" onClick ={() => handleOnClick( GitHubProvider )}>GitHub</button><br/>
-</form>
+
  <Link className="style--link--signIn"> Iniciar sesion</Link>
 </div>
   
