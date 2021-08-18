@@ -1,8 +1,8 @@
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./home";
-import { SignUp } from "./signUp";
-import { SignIn } from "./login";
+import HomePage from "./pages/home";
+import { SignUp } from "./pages/signUp";
+import { SignIn } from "./pages/login";
 
 function App() {
   return (
