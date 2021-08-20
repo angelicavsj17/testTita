@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../cards/cards.css'
 import cat from '../../assets/gato.png'
 import like from '../../assets/like.png'
 import user from '../../assets/user.png'
+import Modal from '../modal'
 
 const Cards = () => {
+
+const [openModal, setOpenModal] = useState(false)
+
     return (
         <>
             <div className="container--cards">
@@ -26,7 +30,8 @@ const Cards = () => {
                         <h1 className="style--text--like">45</h1>
                        
                     </div>
-                     <button>comentarios</button>
+                     <button onClick={() => {setOpenModal(true)}}>comentarios</button>
+                     {openModal && <Modal closeModal={setOpenModal}/>}
                 </div>
 
             </div>
