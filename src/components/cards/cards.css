@@ -41,13 +41,15 @@
 
 .style--tags{
     width: 100px;
-    height: 30px;
+    height: 25px;
     border-radius: 30px;
     background-color:#5e4a89;
     opacity: 0.8;
     font-size: 20px;
     text-align: center;
     margin-right: 10px;
+    color: whitesmoke;
+    font-size: 18px;
   
 
 }
@@ -62,6 +64,7 @@ margin-top: 7px;
 .style--name--user--card{
     font-size: 18px;
     margin-left: 5px;
+    font-weight: 500;
 }
 
 .img-user--post{
