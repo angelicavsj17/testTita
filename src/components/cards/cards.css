@@ -42,11 +42,13 @@
     font-size: 20px;
     color:white;
     text-align: center;
+    margin-right: 10px;
 }
 
 .style--text--like{
     font-size: 20px;
     color: gray;
+    margin-left: 10px;
 }
 
 .style--name--user--card{
