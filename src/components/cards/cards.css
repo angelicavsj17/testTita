@@ -1,9 +1,12 @@
+
+
 .container--cards{
     display: flex;
     border: solid gray 1px;
     width: 450px;
-    height: 350px;
+    height: 360px;
     border-radius: 30px;
+    background-color: white;
 }
 
 .style--img--post{
@@ -27,7 +30,7 @@
 }
 
 .text--cards{
-    font-size: 15px;
+    font-size: 18px;
     color: gray;
     margin-top: 130px;
     margin-right: 20px;
@@ -55,6 +58,7 @@ margin-top: 7px;
 .style--name--user--card{
     font-size: 18px;
     color: gray;
+    margin-left: 5px;
 }
 
 .img-user--post{
@@ -71,5 +75,9 @@ margin-top: 7px;
 .box1--cards--post{
     margin-left: 15px;
     margin-top: 10px;
+}
+
+.box2--cards{
+    margin-left: 15px;
 }
 
