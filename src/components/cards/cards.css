@@ -1,16 +1,19 @@
 
 
+
 .container--cards{
-    display: flex;
-    border: solid gray 1px;
-    width: 450px;
-    height: 360px;
-    border-radius: 30px;
+  
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
     background-color: white;
+  margin-right: 150px;
+  margin-bottom: 80px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 .style--img--post{
-    width: 200px;
+    width: 300px;
     height: 190px;
 }
 
@@ -31,21 +34,22 @@
 
 .text--cards{
     font-size: 18px;
-    color: gray;
-    margin-top: 130px;
     margin-right: 20px;
     text-align: justify;
+    font-weight: 300;
 }
 
 .style--tags{
     width: 100px;
     height: 30px;
-    background-color: #5e4a89;
     border-radius: 30px;
+    background-color:#5e4a89;
+    opacity: 0.8;
     font-size: 20px;
-    color:white;
     text-align: center;
     margin-right: 10px;
+  
+
 }
 
 .style--text--like{
@@ -57,7 +61,6 @@ margin-top: 7px;
 
 .style--name--user--card{
     font-size: 18px;
-    color: gray;
     margin-left: 5px;
 }
 
@@ -65,20 +68,27 @@ margin-top: 7px;
     border-radius: 100px;
     width: 40px;
     height: 40px;
-    border: solid #5e4a89 3px;
 }
 
 .container--user--data--post{
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .box1--cards--post{
-    margin-left: 15px;
     margin-top: 10px;
 }
 
 .box2--cards{
     margin-left: 15px;
+}
+
+.links--coments--cards{
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom:rgba(0, 0, 0, 0.2) solid 1px;
+  
 }
 

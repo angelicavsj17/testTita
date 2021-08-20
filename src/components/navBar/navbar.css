@@ -1,0 +1,15 @@
+.container--navBar{
+    width: auto;
+    height: 100px;
+background-color: #5e4a89;
+margin-bottom: 80px;
+
+}
+
+.text--data--user{
+margin: 0px;
+color: white;
+padding-top: 25px;
+margin-left: 50px;
+
+}
