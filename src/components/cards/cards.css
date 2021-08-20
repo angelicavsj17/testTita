@@ -1,0 +1,72 @@
+.container--cards{
+    display: flex;
+    border: solid gray 1px;
+    width: 450px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.style--img--post{
+    width: 200px;
+    height: 190px;
+}
+
+.style--like{
+    width: 40px;
+    height: 40px;
+}
+
+.container--tags{
+    display: flex;
+}
+
+.container--likes{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.text--cards{
+    font-size: 15px;
+    color: gray;
+    margin-top: 130px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.style--tags{
+    width: 100px;
+    height: 30px;
+    background-color: #5e4a89;
+    border-radius: 30px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+.style--text--like{
+    font-size: 20px;
+    color: gray;
+}
+
+.style--name--user--card{
+    font-size: 18px;
+    color: gray;
+}
+
+.img-user--post{
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+.container--user--data--post{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.box1--cards--post{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+

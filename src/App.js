@@ -6,12 +6,12 @@ import  SignIn  from "./pages/signIn";
 
 function App() {
   return (
+   
     <Router>
 
       <Switch>
       <Route exact path="/" render={() => <HomePage/>
-}
-        
+}   
        />
 
       <Route
@@ -27,7 +27,6 @@ function App() {
           />
 
       </Switch>
-
     </Router>
   
   );
